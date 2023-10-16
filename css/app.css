@@ -12,10 +12,9 @@ body{
   align-items: center;
   justify-content: center;
 }
-.container{
-}
+.container{}
 .section_box {
-  width: 500px;
+  width:580px;
   height: 300px;
   background-color: #fff;
   box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
@@ -26,15 +25,23 @@ body{
     padding: 0 15px;
     border-radius: 5px;
     border: 3px solid #333;
+    overflow: hidden;
+    cursor: pointer;
 }
 .input{}
 .header{
     display: flex;
     justify-content: space-between;
     position: relative;
+    min-height: 3rem;
+    line-height: 3rem;
+    cursor: pointer;
+}
+.section_box input:checked + label{
+    height: auto;
 }
 .title_header{
-    font-size: 18px;
+    font-size: 14px;
     font-weight: 500;
     color: #333;
 }
@@ -50,7 +57,16 @@ body{
     position: absolute;
     border: 1px solid  #333;
     height: 9px;
-    top: 7px;
+    top: 18px;
     right: 0;
     transform: rotate(89deg);
+}
+.text{
+    font-size: 12px;
+    height: 0;
+    transition: all 0.3s linear;
+}
+.section_box input:checked + label + p {
+    height: 80px;
+    padding-bottom: 10px;
 }
