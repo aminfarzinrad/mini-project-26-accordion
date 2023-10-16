@@ -15,7 +15,6 @@ body{
 .container{}
 .section_box {
   width:580px;
-  height: 300px;
   background-color: #fff;
   box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
   border-radius: 8px;
@@ -27,6 +26,23 @@ body{
     border: 3px solid #333;
     overflow: hidden;
     cursor: pointer;
+    margin: 0.8rem;
+}
+.section_box .row:nth-child(1){
+    border: 1px solid #ffd6b3;
+    background-color: #fff7f0;
+}
+.section_box .row:nth-child(2){
+    border: 1px solid #cceeff;
+    background-color: #f0faff;
+}
+.section_box .row:nth-child(3){
+    border: 1px solid #ffccd6;
+    background-color: #fff0f3;
+}
+.section_box .row:nth-child(4){
+    border: 1px solid #ccccff;
+    background-color: #f0f0ff;
 }
 .input{}
 .header{
